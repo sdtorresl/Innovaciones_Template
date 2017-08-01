@@ -1690,7 +1690,7 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.55);
+		color: rgba(255, 255, 255, 0.78);
 		font-family: Gidole;
 		font-size: 16.5pt;
 		font-weight: normal;
@@ -1746,7 +1746,7 @@
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 0.8em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -2103,15 +2103,16 @@
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		border-radius: 0.25em;
-		border: solid 1px rgba(255, 255, 255, 0.15);
+		border: solid 1px rgba(255, 255, 255, 0.50);
 		background: rgba(255, 255, 255, 0.05);
 		margin: 0 0 2em 0;
 	}
 
 		.features section {
-			padding: 3.5em 3em 1em 7em ;
+			padding: 2.5em 3em 1em 7em ;
+			background-color: #64B3E0;
 			width: 50%;
-			border-top: solid 1px rgba(255, 255, 255, 0.15);
+			border-top: solid 1px rgba(255, 255, 255, 0.50);
 			position: relative;
 		}
 
@@ -2120,7 +2121,7 @@
 			}
 
 			.features section:nth-child(2n) {
-				border-left: solid 1px rgba(255, 255, 255, 0.15);
+				border-left: solid 1px rgba(255, 255, 255, 0.50);
 			}
 
 			.features section .icon {
@@ -2630,7 +2631,7 @@
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #b74e91;
+					color: #408dda;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
@@ -3150,6 +3151,10 @@
 			transform: translateX(-1em);
 			opacity: 0;
 		}
+		.grey {
+		   background-color: white;
+		   color: grey;
+		}
 
 		@media screen and (max-width: 1680px) {
 
@@ -3339,7 +3344,7 @@
 
 		.wrapper.style3 {
 			background-color: #b74e91;
-			background-color: #4eb78e;
+			background-color: #ffffff;
 		}
 
 		.wrapper.style3-alt {
@@ -3598,7 +3603,7 @@
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: rgba(255, 255, 255, 0.15);
+		color: rgba(255, 255, 255, 0.78);
 	}
 
 	#header + #wrapper + #footer > .inner {
