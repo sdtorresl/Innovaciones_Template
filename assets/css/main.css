@@ -86,6 +86,71 @@
 	margin-bottom: 2em;
 }
 
+/* Loading */
+@keyframes lds-rolling {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-webkit-keyframes lds-rolling {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.lds-css {
+	position: fixed;
+	top: 30%;
+	right: 30%;
+	left: 30%;
+	bottom: 30%;
+	background: #ffffffe6;
+	border-radius: 50px;
+	box-shadow: 1px 1px 1px #ccc;
+	z-index: 1000000;
+	display: none;
+}
+.lds-rolling {
+  position: relative;
+}
+.lds-rolling div,
+.lds-rolling div:after {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 10px solid #8cd0e5;
+  border-top-color: transparent;
+  border-radius: 50%;
+}
+.lds-rolling div {
+  -webkit-animation: lds-rolling 1s linear infinite;
+  animation: lds-rolling 1s linear infinite;
+  top: 100px;
+  left: 100px;
+}
+.lds-rolling div:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.lds-rolling {
+	width: 100px !important;
+	height: 100px !important;
+	-webkit-transform: translate(-50px, -50px) scale(0.5) translate(50px, 50px);
+	transform: translate(-50px, -100px) scale(0.5) translate(50px, 50px);
+	margin-left: auto;
+	margin-right: auto;
+	top: 50%;
+}
+
 /* Form messages */
 .error {
 	background: #dd7070;
